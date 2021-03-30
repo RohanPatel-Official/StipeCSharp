@@ -9,6 +9,7 @@ namespace WebApplication1.Controllers
     {
         private readonly StripeSetting _mySettings;
         private int amount = 10000;
+
         public PaymentController(IOptions<StripeSetting> appIdentitySettingsAccessor)
         {
             _mySettings = appIdentitySettingsAccessor.Value;
